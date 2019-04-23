@@ -15,7 +15,7 @@
 
 ## 试题二：获得每个用户最近五次的event链并给出哪个event链使用最多
 
-![](../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image.png)
 
 考察函数：ROW\_NUMBER\(\) OVER /  CONTACT/ LEAD\(\) OVER\(\)
 
