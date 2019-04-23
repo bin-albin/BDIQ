@@ -11,7 +11,26 @@
 | 2 | 2 | 30 | 50 |
 | 2 | 3 | 40 | 110 |
 
-考察知识点：Hive窗口函数：
+考察知识点：Hive窗口函数：SUM
+
+追加：要求最多统计12个月的
+
+考察知识点：RANGE/PRECEDING 
+
+解题SQL：
+
+{% code-tabs %}
+{% code-tabs-item title="HIVE SQL" %}
+```sql
+SELECT
+id
+month,
+SUM(amoun) OVER(PARTITION BY id ORDER BY month) AS result
+FROM
+uaccess
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## 试题二：获得每个用户最近五次的event链并给出哪个event链使用最多
 
