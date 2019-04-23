@@ -19,7 +19,11 @@
 
 考察函数：ROW\_NUMBER\(\) OVER /  CONTACT/ LEAD\(\) OVER\(\)
 
-```text
+#### 解题代码
+
+{% code-tabs %}
+{% code-tabs-item title="Hive SQL" %}
+```sql
 select 
 c_event,
 count(1) as c
@@ -35,4 +39,6 @@ order by c
 desc 
 limit 5
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
