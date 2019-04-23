@@ -13,3 +13,26 @@
 
 考察知识点：Hive窗口函数：
 
+## 试题二：获得每个用户最近五次的event链并给出哪个event链使用最多
+
+![](../.gitbook/assets/image.png)
+
+考察函数：ROW\_NUMBER\(\) OVER /  CONTACT/ LEAD\(\) OVER\(\)
+
+```text
+select 
+c_event,
+count(1) as c
+from (
+select 
+userid,
+time,
+row_number() over(partition by userid order by time desc) as n,
+concat(event,'->',LEAD(event,1) over(partition by userid order by time desc) ) as c_event
+from userevent ) as t where c_event is not null 
+group by c_event
+order by c
+desc 
+limit 5
+```
+
