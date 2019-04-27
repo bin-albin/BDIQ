@@ -1,8 +1,11 @@
 # Table of contents
 
 * [书籍概述](README.md)
+* [Spark相关](spark-xiang-guan/README.md)
+  * [Spark常见知识点](spark-xiang-guan/untitled.md)
 * [Hive相关](hive/README.md)
   * [HIVE知识点](hive/hive-zhi-shi-dian/README.md)
+    * [Hive 常见考点](hive/hive-zhi-shi-dian/hive-chang-jian-kao-dian.md)
     * [Hive函数\(LAG/LEAD/FIRST\_VALUE/LAST\_VALUE\)](hive/hive-zhi-shi-dian/hive-han-shu-lagleadfirstvaluelastvalue.md)
     * [Hive窗口函数和分析函数](hive/hive-zhi-shi-dian/hive-chuang-kou-han-shu-he-fen-xi-han-shu.md)
   * [HIVE试题](hive/hive-shi-ti/README.md)
