@@ -20,3 +20,11 @@ groupByKey会对每一个RDD中的value值进行聚合形成一个序列\(Iterat
 
 #### 三：spark是如何实现on yarn的？如何设计一个基于yarn调度的应用服务
 
+四：Spark为什么比MR快？
+
+五：RDD的宽依赖和窄依赖
+
+六：为什么Spark Application在没有获得足够的资源，job就开始执行了，可能会导致什么什么问题发生？
+
+七：cogroup rdd实现原理，你在什么场景下用过这个rdd
+
