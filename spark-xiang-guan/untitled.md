@@ -26,5 +26,5 @@ groupByKey会对每一个RDD中的value值进行聚合形成一个序列\(Iterat
 
 六：为什么Spark Application在没有获得足够的资源，job就开始执行了，可能会导致什么什么问题发生？
 
-七：cogroup rdd实现原理，你在什么场景下用过这个rdd
+七：Spark cogroup rdd实现原理，你在什么场景下用过这个rdd
 
