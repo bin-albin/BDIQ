@@ -28,3 +28,7 @@ groupByKey会对每一个RDD中的value值进行聚合形成一个序列\(Iterat
 
 七：Spark cogroup rdd实现原理，你在什么场景下用过这个rdd
 
+八：Spark 正确消费Kafka 的方式？
+
+九：map与mapPartition区别
+
