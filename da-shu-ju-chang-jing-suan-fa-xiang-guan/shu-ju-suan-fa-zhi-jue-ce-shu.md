@@ -37,14 +37,18 @@
 **面试官插问：**如何选择最优特征呢？  
  简单讲，根据特征的分类能力去选择最优特征，特征分类能力的衡量通常采用信息增益或信息增益比。  
 **面试官：**谈谈你对信息增益和信息增益比的理解。  
- 要理解信息增益，首先要理解熵这个概念。从概率统计的角度看，熵是对随机变量不确定性的度量，也可以说是对随机变量的概率分布的一个衡量。熵越大，随机变量的不确定性越大。**对同一个随机变量，当它的概率分布为均匀分布时，不确定性最大，熵也最大。对有相同概率分布的不同的随机变量，取值越多的随机变量熵越大。（这是精华）。**熵的公式如下：![](//upload-images.jianshu.io/upload_images/1371984-df62653d0d3569e6.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/428/format/webp)shang.PNG
+ 要理解信息增益，首先要理解熵这个概念。从概率统计的角度看，熵是对随机变量不确定性的度量，也可以说是对随机变量的概率分布的一个衡量。熵越大，随机变量的不确定性越大。**对同一个随机变量，当它的概率分布为均匀分布时，不确定性最大，熵也最大。对有相同概率分布的不同的随机变量，取值越多的随机变量熵越大。（这是精华）。**熵的公式如下：
 
-其次，要理解条件熵的概念。正如熵是对随机变量不确定性的度量一样，条件熵是指，有相关的两个随机变量X和Y，在已知随机变量X的条件下随机变量Y的不确定性。定义为X给定条件下Y的条件概率分布的熵对X的数学期望。公式如下：![](//upload-images.jianshu.io/upload_images/1371984-9b73cc35da45e73f.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/405/format/webp)tiaojianshang.PNG
+![](//upload-images.jianshu.io/upload_images/1371984-df62653d0d3569e6.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/428/format/webp)
+
+其次，要理解条件熵的概念。正如熵是对随机变量不确定性的度量一样，条件熵是指，有相关的两个随机变量X和Y，在已知随机变量X的条件下随机变量Y的不确定性。定义为X给定条件下Y的条件概率分布的熵对X的数学期望。公式如下：
+
+![](//upload-images.jianshu.io/upload_images/1371984-9b73cc35da45e73f.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/405/format/webp)
 
 当熵和条件熵中的概率由数据估计（特别是极大似然估计）得到时，所对应的熵与条件熵分别为经验熵与经验条件熵。
 
 所谓信息增益，也叫互信息，就是指集合D的经验熵H\(D\)与特征A给定条件下D的经验条件熵H\(D\|A\)之差，公式如下：  
-![](//upload-images.jianshu.io/upload_images/1371984-b38bda0f82a0c6a1.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/336/format/webp)xinxizengyi.PNG
+![](//upload-images.jianshu.io/upload_images/1371984-b38bda0f82a0c6a1.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/336/format/webp)
 
 用信息增益去选择特征有一个问题，即偏向于选择取值较多的特征。解决思路就是对取值较多的特征进行适当的惩罚（这里如果面试官感兴趣，可以说说惩罚思想，如L1，L2都是一种惩罚的做法），这就是信息增益比所干的事。公式如下：
 
@@ -89,7 +93,7 @@ C\_α\(T\_A\) ≦C\_α\(T\_B\)
 
 下面简要叙述其数学过程，具体证明过程比较复杂，就不写了，感兴趣的可以参考其他资料。
 
-对决策树T的每一个内部节点t，计算![](//upload-images.jianshu.io/upload_images/1371984-e9dec95823964c62.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/219/format/webp)cartjianzhi.PNG
+对决策树T的每一个内部节点t，计算公式![](//upload-images.jianshu.io/upload_images/1371984-e9dec95823964c62.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/219/format/webp)
 
 T\_t代表以内部节点t为根节点的子树。 这样计算出的值表示剪枝后整体损失函数减少的程度。
 
