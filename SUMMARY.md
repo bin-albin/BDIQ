@@ -14,5 +14,7 @@
   * [HIVE试题](hive/hive-shi-ti/README.md)
     * [Hive试题汇总\(1-10\)](hive/hive-shi-ti/hive-shi-ti-hui-zong-110.md)
 * [大数据场景算法相关](da-shu-ju-chang-jing-suan-fa-xiang-guan/README.md)
+  * [数据算法之决策树](da-shu-ju-chang-jing-suan-fa-xiang-guan/shu-ju-suan-fa-zhi-jue-ce-shu.md)
+  * [大数据算法](da-shu-ju-chang-jing-suan-fa-xiang-guan/da-shu-ju-suan-fa.md)
   * [大数据场景和算法类\[1-10\]](da-shu-ju-chang-jing-suan-fa-xiang-guan/chang-jing-suan-fa-110.md)
 
